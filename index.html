@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Refund System</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="container" id="header">
+			<img src="./assets/icons/logo.svg" alt="" />
+		</header>
+		<main>
+			<section class="request box">
+				<header>
+					<span>Request a refund</span>
+					<p>Your request will be reviewed and reimbursed within 30 days.</p>
+				</header>
+				<form action="" method="post" enctype="multipart/form-data">
+					<div class="input-wrapper">
+						<label>Expense name</label>
+						<div class="input-inner">
+							<input type="text" name="expenseName" id="expenseName" />
+						</div>
+					</div>
+					<div>
+						<div class="input-wrapper flex-2">
+							<label>Category</label>
+							<div class="input-inner">
+								<select id="category" name="category">
+									<option value="" disabled selected hidden>Select</option>
+									<option value="food">Food</option>
+									<option value="accommodation">Accommodation</option>
+									<option value="transport">Transport</option>
+									<option value="services">Services</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-wrapper flex-1">
+							<label>Amount</label>
+							<div class="input-inner">
+								<input
+									type="text"
+									name="title"
+									id="amount"
+									placeholder="US$ 0.00"
+								/>
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Add expense" name="submit" id="submit" />
+				</form>
+			</section>
+
+			<section class="history box">
+				<header>
+					<div class="summary">
+						<span>My requests</span>
+						<img src="./assets/icons/point.svg" alt="" />
+						<label>0 expenses</label>
+						<div class="total">
+							<span>US$</span>
+							<span class="totalAmount">0.00</span>
+						</div>
+					</div>
+				</header>
+				<div class="item-list">
+					<ul></ul>
+				</div>
+			</section>
+		</main>
+
+		<script src="/scripts.js"></script>
+	</body>
+</html>
