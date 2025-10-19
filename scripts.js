@@ -104,5 +104,5 @@ function updateSummary() {
 	}
 	totalAmountEmt.textContent = formatCurrencyUSD(totalAmount)
 	expenseCounterEmt.textContent =
-		ul.children.length + ul.children.length > 1 ? "expenses" : "expense"
+		ul.children.length + (ul.children.length > 1 ? " expenses" : " expense")
 }
