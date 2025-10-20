@@ -27,7 +27,7 @@
 	--text-subheading: 600 0.875rem/1.125rem var(--font-family);
 	--text-body-lg-reg: 400 1rem/1.25rem var(--font-family);
 	--text-body-lg-bd: 700 1rem/1.25rem var(--font-family);
-	--text-body-md-reg: 400 0.875rem/1.125rem var(--font-family);
+	--text-body-md-reg: 400 1rem/1.125rem var(--font-family);
 	--text-body-md-bd: 700 0.875rem/1.125rem var(--font-family);
 	--text-body-sm: 400 0.75rem/1rem var(--font-family);
 	--text-label-reg: 400 var(--font-family);
@@ -55,7 +55,7 @@ body {
 }
 
 body {
-	padding: 2rem;
+	padding: 2rem 0rem 2rem 0rem;
 }
 
 a {
@@ -73,6 +73,7 @@ label {
 }
 
 main {
+	margin-top: 0.25rem;
 	margin-inline: auto;
 
 	display: flex;
@@ -87,7 +88,6 @@ main {
 
 #header {
 	text-align: left;
-	margin-top: 1rem;
 }
 
 .container {
@@ -338,8 +338,14 @@ main {
 		width: 60rem;
 	}
 
+	#header {
+		margin-top: 1rem;
+	}
+
 	main {
 		flex-direction: row;
 		height: 50%;
+
+		margin-top: 2rem;
 	}
 }
